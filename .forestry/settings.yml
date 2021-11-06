@@ -4,6 +4,13 @@ auto_deploy: false
 admin_path: 
 webhook_url: 
 sections:
+- type: directory
+  path: ''
+  label: NFTs
+  create: all
+  match: "**/*"
+  templates:
+  - media-element
 - type: document
   path: README-FORESTRY.md
   label: Help
